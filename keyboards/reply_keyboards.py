@@ -3,7 +3,9 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 def get_main_keyboard()-> ReplyKeyboardMarkup:
     keyboard = ReplyKeyboardMarkup(
         keyboard = [
-            [KeyboardButton(text="Test")]
+            [KeyboardButton(text="Готові пропозиції"), KeyboardButton(text="Пропозиції по містам")],
+            [KeyboardButton(text="Бронювання"), KeyboardButton(text="Акції")],
+            [KeyboardButton(text="Контакти")]
         ],
         resize_keyboard=True
     )
