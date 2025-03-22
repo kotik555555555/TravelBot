@@ -1,31 +1,58 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-def get_inline_test() -> InlineKeyboardMarkup:
+def get_inline_keyboard() -> InlineKeyboardMarkup:
     keyboard = [
-        [InlineKeyboardButton(text="test1", callback_data="test_btn_1"),
-         InlineKeyboardButton(text="test2", callback_data="test_btn_2")]
+        [
+            InlineKeyboardButton(text="Ціна(за зростанням)", callback_data="btn_1.1"),
+            InlineKeyboardButton(text="Ціна(за спаданням)", callback_data="btn_1.2")
+        ],
+        [
+            InlineKeyboardButton(text="Назад", callback_data="btn_1.3")
+        ]
     ]
 
     return InlineKeyboardMarkup(inline_keyboard=keyboard)
 
-def get_inline_keyboard() -> InlineKeyboardMarkup:
-    keyboard1 = [
+def get_inline_keyboard2() -> InlineKeyboardMarkup:
+    keyboard2 = [
         [
-            InlineKeyboardButton(text="Дрогобич", callback_data="btn_1"),
-            InlineKeyboardButton(text="Стрий", callback_data="btn_2")
+            InlineKeyboardButton(text="Ціна(за зростанням)", callback_data="btn_2.1"),
+            InlineKeyboardButton(text="Ціна(за спаданням)", callback_data="btn_2.2")
         ],
         [
-            InlineKeyboardButton(text="Борислав", callback_data="btn_3"),
-            InlineKeyboardButton(text="Трускавець", callback_data="btn_4")
+            InlineKeyboardButton(text="Пошук за назвою міста", callback_data="btn_2.3"),
+            InlineKeyboardButton(text="Назад", callback_data="btn_2.4")
         ]
     ]
 
-    return InlineKeyboardMarkup(inline_keyboard=keyboard1)
+    return InlineKeyboardMarkup(inline_keyboard=keyboard2)
 
-def get_inline_test2() -> InlineKeyboardMarkup:
-    keyboard2 = [
-        [InlineKeyboardButton(text="test3", callback_data="test_btn_3"),
-         InlineKeyboardButton(text="test4", callback_data="test_btn_4")]
+def get_inline_keyboard3() -> InlineKeyboardMarkup:
+    keyboard3 = [
+        [
+            InlineKeyboardButton(text="Опишіть ваше замовлення", callback_data="btn_3.1"),
+            InlineKeyboardButton(text="Назад", callback_data="btn_3.2")
+        ],
     ]
 
-    return InlineKeyboardMarkup(inline_keyboard=keyboard2)
+    return InlineKeyboardMarkup(inline_keyboard=keyboard3)
+
+def get_inline_keyboard4() -> InlineKeyboardMarkup:
+    keyboard4 = [
+        [
+            InlineKeyboardButton(text="Список акцій", callback_data="btn_4.1"),
+            InlineKeyboardButton(text="Назад", callback_data="btn_4.2")
+        ],
+    ]
+
+    return InlineKeyboardMarkup(inline_keyboard=keyboard4)
+
+def get_inline_keyboard5() -> InlineKeyboardMarkup:
+    keyboard5 = [
+        [
+            InlineKeyboardButton(text="Контакти (повідомлення)", callback_data="btn_5.1"),
+            InlineKeyboardButton(text="Назад", callback_data="btn_5.2")
+        ],
+    ]
+
+    return InlineKeyboardMarkup(inline_keyboard=keyboard5)
