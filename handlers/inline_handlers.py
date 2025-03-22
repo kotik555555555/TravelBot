@@ -1,5 +1,5 @@
 from aiogram import types, Router
-from keyboards.inline_keyboards import get_inline_keyboard, get_inline_keyboard2, get_inline_keyboard3, get_inline_keyboard4, get_inline_keyboard5
+from keyboards.reply_keyboards  import get_main_keyboard
 
 router = Router()
 
@@ -19,4 +19,42 @@ async def city_callback_handler(callback_query: types.CallbackQuery):
     if data == "btn_1.1":
         await callback_query.message.answer("Ціна(за зростанням):")
     elif data == "btn_1.2":
+        await callback_query.message.answer("Ціна(за спаданням):")
+    elif data == "btn_1.3":
+        await callback_query.message.answer("В процесі...")
+
+@router.callback_query(lambda c:  c.data.startswith("btn_2."))
+async def city_callback_handler(callback_query: types.CallbackQuery):
+    data = callback_query.data
+    if data == "btn_2.1":
         await callback_query.message.answer("Ціна(за зростанням):")
+    elif data == "btn_2.2":
+        await callback_query.message.answer("Ціна(за спаданням):")
+    elif data == "btn_2.3":
+        await callback_query.message.answer("Введіть назву міста:")
+    elif data == "btn_2.4":
+        await callback_query.message.answer("В процесі...")
+
+@router.callback_query(lambda c:  c.data.startswith("btn_3."))
+async def city_callback_handler(callback_query: types.CallbackQuery):
+    data = callback_query.data
+    if data == "btn_3.1":
+        await callback_query.message.answer("Опишіть ваше замовлення:")
+    elif data == "btn_3.2":
+        await callback_query.message.answer("В процесі...")
+
+@router.callback_query(lambda c:  c.data.startswith("btn_4."))
+async def city_callback_handler(callback_query: types.CallbackQuery):
+    data = callback_query.data
+    if data == "btn_4.1":
+        await callback_query.message.answer("Список акцій:")
+    elif data == "btn_4.2":
+        await callback_query.message.answer("В процесі...")
+
+@router.callback_query(lambda c:  c.data.startswith("btn_5."))
+async def city_callback_handler(callback_query: types.CallbackQuery):
+    data = callback_query.data
+    if data == "btn_5.1":
+        await callback_query.message.answer("Потім напишу.")
+    elif data == "btn_5.2":
+        await callback_query.message.answer("В процесі...")
