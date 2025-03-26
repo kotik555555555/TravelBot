@@ -3,11 +3,11 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 def get_inline_keyboard() -> InlineKeyboardMarkup:
     keyboard = [
         [
-            InlineKeyboardButton(text="Ціна(за зростанням)", callback_data="btn_1.1"),
-            InlineKeyboardButton(text="Ціна(за спаданням)", callback_data="btn_1.2")
+            InlineKeyboardButton(text="Ціна(за зростанням)", callback_data="btn_asc"),
+            InlineKeyboardButton(text="Ціна(за спаданням)", callback_data="btn_esc")
         ],
         [
-            InlineKeyboardButton(text="Назад", callback_data="btn_1.3")
+            InlineKeyboardButton(text="Назад", callback_data="btn_back")
         ]
     ]
 
@@ -40,7 +40,7 @@ def get_inline_keyboard3() -> InlineKeyboardMarkup:
 def get_inline_keyboard4() -> InlineKeyboardMarkup:
     keyboard4 = [
         [
-            InlineKeyboardButton(text="Список акцій", callback_data="btn_4.1"),
+            InlineKeyboardButton(text="Забронювати", callback_data="btn_4.1"),
             InlineKeyboardButton(text="Назад", callback_data="btn_4.2")
         ],
     ]
