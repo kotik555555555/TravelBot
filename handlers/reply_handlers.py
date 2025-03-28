@@ -16,18 +16,27 @@ def get_book_button(offer_title):
 
 @router.message(lambda message: message.text.startswith("Готові пропозиції"))
 async def test_handler(message: types.Message):
-    all_offers = []
-    for city in data["cities"]:
-        for offer in city["offers"]:
-            all_offers.append((city["name"], offer["title"], offer["price"], offer["description"]))
+    all_offers = [
+        (city.get("name"), offer.get("title"), offer.get("price"), offer.get("description"), offer.get("image"))
+        for city in data.get("cities", []) if isinstance(city, dict)
+        for offer in city.get("offers", []) if isinstance(offer, dict)
+    ]
 
-    for city_name, title, price, description in all_offers:
-        response_text = f"📍 {city_name}: {title}\nЦіна: {price} грн\n{description}"
-        await message.answer(response_text)
+    if all_offers:
+        for city_name, title, price, description, image in all_offers:
+            response_text = (
+                f"📍 *{city_name}: {title}*\n"
+                f"💰 *Ціна:* {price} грн\n"
+                f"📖 {description}"
+            )
+            if image:  # Якщо є фото, надсилаємо його
+                await message.answer_photo(photo=image, caption=response_text, parse_mode="Markdown")
+            else:  # Якщо фото немає, відправляємо просто текст
+                await message.answer(response_text, parse_mode="Markdown")
 
-    await message.answer("Виберіть опцію сортування:", reply_markup=get_inline_keyboard())
-
-    # Check if city name is provided
+        await message.answer("📊 Виберіть опцію сортування:", reply_markup=get_inline_keyboard())
+    else:
+        await message.answer("❌ Наразі немає доступних пропозицій.", reply_markup=get_inline_keyboard())
 
 
 @router.message(lambda message: message.text == "Пропозиції по містам")
@@ -42,23 +51,29 @@ async def test_handler(message: types.Message):
 
 @router.message(lambda message: message.text == "Акції")
 async def test_handler(message: types.Message):
-    offers_with_discount = []
+    # Отримуємо всі пропозиції зі знижкою
+    offers_with_discount = [
+        offer
+        for city in data.get("cities", [])
+        if isinstance(city, dict)
+        for offer in city.get("offers", [])
+        if isinstance(offer, dict) and "discount" in offer
+    ]
 
-    # Перевірка, що data є списком
-    if isinstance(data, dict) and "cities" in data:  # We need to check for the correct structure
-        for city in data["cities"]:
-            if isinstance(city, dict) and "offers" in city:  # Перевірка наявності ключа "offers"
-                for offer in city["offers"]:
-                    if isinstance(offer, dict) and "discount" in offer:  # Перевірка наявності знижки
-                        offers_with_discount.append(offer)
-
-    # Якщо є пропозиції зі знижкою
     if offers_with_discount:
         for offer in offers_with_discount:
-            response_text = f"Тур: {offer['title']}\nЦіна: {offer['price']} грн\nЗнижка: {offer['discount']}\nОпис: {offer['description']}\n"
-            await message.answer(response_text, reply_markup=get_inline_keyboard4())  # Send each offer as a separate message
+            response_text = (
+                f"🏝 *{offer['title']}*\n"
+                f"💰 *Ціна:* {offer['price']} грн\n"
+                f"🎉 *Знижка:* {offer['discount']}%\n"
+                f"📖 *Опис:* {offer['description']}"
+            )
+            if "image" in offer and offer["image"]:  # Якщо є картинка
+                await message.answer_photo(photo=offer["image"], caption=response_text, reply_markup=get_inline_keyboard4(), parse_mode="Markdown")
+            else:
+                await message.answer(response_text, reply_markup=get_inline_keyboard4(), parse_mode="Markdown")
     else:
-        await message.answer("На даний момент немає доступних акцій.", reply_markup=get_inline_keyboard4())
+        await message.answer("🔸 Наразі немає доступних акцій.", reply_markup=get_inline_keyboard4())
 
 
 @router.message(lambda message: message.text == "Контакти")
@@ -69,5 +84,6 @@ async def test_handler(message: types.Message):
 
 @router.message(lambda message: message.text == "Пасхалочка")
 async def test_handler(message: types.Message):
-    photo = FSInputFile(r"C:\Users\asus\Documents\GitHub\TravelBot\assets\playboi-carti-gq-december-january-2021-02.jpg")  # Замініть шлях на реальний шлях до зображення
+    # Use baselib FileManager to manage the image path
+    photo = FSInputFile("assets/playboi-carti-gq-december-january-2021-02.jpg")  # Pass the resolved file path to FSInputFile
     await message.answer_photo(photo, caption="Ось ваша пасхалочка! 🐣")

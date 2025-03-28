@@ -5,12 +5,12 @@
             "name": "Запоріжжя",
             "country": "Україна",
             "offers": [
-                {"id": 101, "title": "Хортиця тур", "price": 2600, "description": "Відвідайте острів Хортиця та дізнайтесь більше про козаків."},
-                {"id": 102, "title": "Річкова подорож", "price": 3000, "description": "Прогулянка на теплоході по Дніпру.", "discount": "10%", "description": "Безкоштовна екскурсія на борту при замовленні групової поїздки."},
-                {"id": 103, "title": "Запорізький індустріальний тур", "price": 2800, "description": "Відвідування заводів та промислових об'єктів."},
-                {"id": 104, "title": "Парки Запоріжжя", "price": 2300, "description": "Огляд кращих парків та зелених зон міста."},
-                {"id": 105, "title": "Гастро-тур", "price": 2700, "description": "Скуштуйте найкращі страви місцевої кухні.", "discount": "15%", "description": "Подарунок від місцевого ресторану при бронюванні туру для 4 осіб."},
-                {"id": 106, "title": "Активний відпочинок", "price": 3200, "description": "Сплав по Дніпру та пішохідний тур по місту.", "discount": "20%", "description": "Знижка при бронюванні турів на дві особи."}
+                {"id": 101, "title": "Хортиця тур", "price": 2600, "description": "Відвідайте острів Хортиця та дізнайтесь більше про козаків.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Khortytsia.JPG/800px-Khortytsia.JPG"},
+                {"id": 102, "title": "Річкова подорож", "price": 3000, "description": "Прогулянка на теплоході по Дніпру.", "discount": 10, "description1": "Безкоштовна екскурсія на борту при замовленні групової поїздки.", "image": "https://otdihnavse100.com.ua/13110/ekskursiya-raftingu-z-odesi-vidpochinok-ta-ekstrim.jpg"},
+                {"id": 103, "title": "Запорізький індустріальний тур", "price": 2800, "description": "Відвідування заводів та промислових об'єктів.", "image": "https://tourlib.net/statti_ukr/images/dashevska3.jpg"},
+                {"id": 104, "title": "Парки Запоріжжя", "price": 2300, "description": "Огляд кращих парків та зелених зон міста.", "image": "https://lh6.googleusercontent.com/proxy/8xOUSgioPGL3JfK2fpWOXNb_R6JBTtIwOGd23wtupfiUzhLnSOLpBsc7fgOo08KfiRKZw_Xz7Cp5N53F8ygYb13EKw1BGg7zGCTwemXIYg"},
+                {"id": 105, "title": "Гастро-тур", "price": 2700, "description": "Скуштуйте найкращі страви місцевої кухні.", "discount": 15, "description1": "Подарунок від місцевого ресторану при бронюванні туру для 4 осіб.", "image": "https://goodlifetour.com.ua/wp-content/uploads/2017/01/gastro-2.jpg"},
+                {"id": 106, "title": "Активний відпочинок", "price": 3200, "description": "Сплав по Дніпру та пішохідний тур по місту.", "discount": 20, "description1": "Знижка при бронюванні турів на дві особи.", "image": "https://beremytske.com.ua/wp-content/uploads/2018/04/b014169-1.jpg"}
             ]
         },
         {
@@ -18,12 +18,12 @@
             "name": "Вінниця",
             "country": "Україна",
             "offers": [
-                {"id": 201, "title": "Фонтан Рошен", "price": 1800, "description": "Найбільший в Україні світломузичний фонтан."},
-                {"id": 202, "title": "Музей Пирогова", "price": 2000, "description": "Екскурсія по музею видатного лікаря."},
-                {"id": 203, "title": "Вінницькі підземелля", "price": 2200, "description": "Секретні катакомби Вінниці."},
-                {"id": 204, "title": "Замок в Немирові", "price": 2500, "description": "Відвідування старовинного маєтку князів Щербатових."},
-                {"id": 205, "title": "Веломаршрут Вінницею", "price": 1900, "description": "Оглядова велопрогулянка по місту.", "discount": "5%", "description": "Аренда велосипеда безкоштовно для груп понад 5 осіб."},
-                {"id": 206, "title": "Кавовий тур", "price": 2200, "description": "Дегустація різних сортів кави з місцевих кав’ярень.", "discount": "10%", "description": "Знижка для пар на дві особи."}
+                {"id": 201, "title": "Фонтан Рошен", "price": 1800, "description": "Найбільший в Україні світломузичний фонтан.", "image": "https://vinnytsia.city/wp-content/uploads/2020/05/information_items_property_4115.jpg"},
+                {"id": 202, "title": "Музей Пирогова", "price": 2000, "description": "Екскурсія по музею видатного лікаря.", "image": "https://vinnytsia.city/wp-content/uploads/2019/05/800px-Sadyba_Pyrogova-800x580.jpg"},
+                {"id": 203, "title": "Вінницькі підземелля", "price": 2200, "description": "Секретні катакомби Вінниці.", "image": "https://moemisto.ua/img/cache/event_huge/event/0002/28/53deb775476556eeb607c627c684d47528d491cc.jpeg?hash=2017-08-10-10-19-27"},
+                {"id": 204, "title": "Замок в Немирові", "price": 2500, "description": "Відвідування старовинного маєтку князів Щербатових.", "image": "https://vn.20minut.ua/img/cache/reference/news_fb_og/0030/95/2994611-nemirivskiy-palats-knyagini-scherbatovoyi-istoriya-vid-maetku-do-sanatoriyu-z-prorotstvom-scho-zdiysnilosya.jpeg"},
+                {"id": 205, "title": "Веломаршрут Вінницею", "price": 1900, "description": "Оглядова велопрогулянка по місту.", "discount": 5, "description1": "Аренда велосипеда безкоштовно для груп понад 5 осіб.", "image": "https://vezha.ua/wp-content/uploads/2018/07/IMG_7859.jpg"},
+                {"id": 206, "title": "Кавовий тур", "price": 2200, "description": "Дегустація різних сортів кави з місцевих кав’ярень.", "discount": 10, "description1": "Знижка для пар на дві особи.", "image": "https://tourlib.net/statti_ukr/images/gaba2.jpg"}
             ]
         },
         {
@@ -31,12 +31,12 @@
             "name": "Чернівці",
             "country": "Україна",
             "offers": [
-                {"id": 301, "title": "Університетська перлина", "price": 2800, "description": "Екскурсія по Чернівецькому національному університету."},
-                {"id": 302, "title": "Архітектурний тур", "price": 3100, "description": "Огляд старовинних будівель міста."},
-                {"id": 303, "title": "Гастро-тур Буковиною", "price": 2900, "description": "Скуштуйте найкращі страви буковинської кухні."},
-                {"id": 304, "title": "Театральний Чернівці", "price": 2700, "description": "Відвідування місцевих театрів та вистав."},
-                {"id": 305, "title": "Музейні Чернівці", "price": 2600, "description": "Огляд кращих музеїв міста."},
-                {"id": 306, "title": "Карпати з Чернівців", "price": 3500, "description": "Поїздка до Карпат для активного відпочинку.", "discount": "15%", "description": "Знижка для груп більше 4 осіб."}
+                {"id": 301, "title": "Університетська перлина", "price": 2800, "description": "Екскурсія по Чернівецькому національному університету.", "image": "https://www.synevyr.npu.edu.ua/npu_modules/images/logo/synevyr.png"},
+                {"id": 302, "title": "Архітектурний тур", "price": 3100, "description": "Огляд старовинних будівель міста.", "image": "https://travel.chernivtsi.ua/storage/posts/April2021/nOnlrHhZklFqqRKUs76c.jpg"},
+                {"id": 303, "title": "Гастро-тур Буковиною", "price": 2900, "description": "Скуштуйте найкращі страви буковинської кухні.", "image": "https://relax.com.ua/wp-content/media/kiew/2017/04/poltavskie-galyshki.jpg"},
+                {"id": 304, "title": "Театральний Чернівці", "price": 2700, "description": "Відвідування місцевих театрів та вистав.", "image": "https://castles.com.ua/fileadmin/_processed_/csm_IMG_3486_258e92dd9e.png"},
+                {"id": 305, "title": "Музейні Чернівці", "price": 2600, "description": "Огляд кращих музеїв міста.", "image": "https://f.discover.ua/location/3789/gmVHD.jpeg"},
+                {"id": 306, "title": "Карпати з Чернівців", "price": 3500, "description": "Поїздка до Карпат для активного відпочинку.", "discount": 15, "description1": "Знижка для груп більше 4 осіб.", "image": "https://navigator-ukraina.com.ua/media/k2/items/cache/77e3798bb9782084333898c5f75d9aab_XL.jpg"}
             ]
         },
         {
@@ -44,12 +44,12 @@
             "name": "Івано-Франківськ",
             "country": "Україна",
             "offers": [
-                {"id": 401, "title": "Карпатський екотур", "price": 3500, "description": "Відпочинок в Карпатах та знайомство з природою."},
-                {"id": 402, "title": "Мистецький Франківськ", "price": 2300, "description": "Галереї, вуличне мистецтво та арт-простори.", "discount": "10%", "description": "Знижка при відвідуванні двох арт-просторів."},
-                {"id": 403, "title": "Річковий тур", "price": 3000, "description": "Сплав по місцевих річках на байдарках."},
-                {"id": 404, "title": "Кавовий Франківськ", "price": 2100, "description": "Кращі кав’ярні та дегустація напоїв."},
-                {"id": 405, "title": "Стародавні замки", "price": 2900, "description": "Відвідування замків області."},
-                {"id": 406, "title": "Карпати влітку", "price": 2800, "description": "Експедиція в Карпати з походами та кемпінгами.", "discount": "10%", "description": "Знижка на групові бронювання."}
+                {"id": 401, "title": "Карпатський екотур", "price": 3500, "description": "Відпочинок в Карпатах та знайомство з природою.", "image": "https://ekotur.com.ua/wp-content/uploads/2020/04/6.jpg"},
+                {"id": 402, "title": "Мистецький Франківськ", "price": 2300, "description": "Галереї, вуличне мистецтво та арт-простори.", "discount": 10, "description1": "Знижка при відвідуванні двох арт-просторів.", "image": "https://viki-tour.com.ua/wp-content/uploads/2025/03/000000000000000000-1170x650.jpg"},
+                {"id": 403, "title": "Річковий тур", "price": 3000, "description": "Сплав по місцевих річках на байдарках.", "image": "https://static.ukrinform.com/photos/2021_03/thumb_files/630_360_1617101281-277.jpg"},
+                {"id": 404, "title": "Кавовий Франківськ", "price": 2100, "description": "Кращі кав’ярні та дегустація напоїв.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7iCpxzqNDXjyG-JYEmNEIaBBTlV3dqJY-9Q&s"},
+                {"id": 405, "title": "Стародавні замки", "price": 2900, "description": "Відвідування замків області.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSebnKIm-LEMUkkw8b1fSV6xsET6AO6H8tGGA&s"},
+                {"id": 406, "title": "Карпати влітку", "price": 2800, "description": "Експедиція в Карпати з походами та кемпінгами.", "discount": 10, "description1": "Знижка на групові бронювання.", "image": "https://koruna.ua/wp-content/uploads/2017/03/dragobrat_summer.jpg"}
             ]
         },
         {
@@ -57,12 +57,12 @@
             "name": "Полтава",
             "country": "Україна",
             "offers": [
-                {"id": 501, "title": "Полтавська битва", "price": 2800, "description": "Екскурсія по місцю історичної битви."},
-                {"id": 502, "title": "Смак Полтави", "price": 2400, "description": "Дегустація традиційних страв, таких як галушки."},
-                {"id": 503, "title": "Культура і традиції", "price": 2600, "description": "Відвідування етнографічних музеїв."},
-                {"id": 504, "title": "Річкові краєвиди", "price": 2500, "description": "Прогулянка вздовж мальовничих берегів Ворскли."},
-                {"id": 505, "title": "Нічна Полтава", "price": 2900, "description": "Огляд нічного життя та закладів міста."},
-                {"id": 506, "title": "Полтавські замки", "price": 2700, "description": "Відвідування старовинних замків та фортець Полтавщини.", "discount": "12%", "description": "Знижка для дітей до 12 років."}
+                {"id": 501, "title": "Полтавська битва", "price": 2800, "description": "Екскурсія по місцю історичної битви.", "image": "https://ridna.ua/wp-content/uploads/wp-post-thumbnail/Wjof1a.jpg"},
+                {"id": 502, "title": "Смак Полтави", "price": 2400, "description": "Дегустація традиційних страв, таких як галушки.", "image": "https://img.depo.ua/745xX/Jul2017/263662.jpg"},
+                {"id": 503, "title": "Культура і традиції", "price": 2600, "description": "Відвідування етнографічних музеїв.", "image": "https://universe.zp.ua/wp-content/uploads/2024/10/gf-650x340-1.jpg"},
+                {"id": 504, "title": "Річкові краєвиди", "price": 2500, "description": "Прогулянка вздовж мальовничих берегів Ворскли.", "image": "https://ukrainaincognita.com/wp-content/uploads/files/u3/kaskady16_2_0.jpg"},
+                {"id": 505, "title": "Нічна Полтава", "price": 2900, "description": "Огляд нічного життя та закладів міста.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkeuN21RoPhx19hoX4rg2TeOPEk6PHlANbQ&s"},
+                {"id": 506, "title": "Полтавські замки", "price": 2700, "description": "Відвідування старовинних замків та фортець Полтавщини.", "discount": 12, "description1": "Знижка для дітей до 12 років.", "image": "https://www.uamodna.com/assets/articles/image/aj30hker/fullsize.jpg"}
             ]
         },
         {
@@ -70,12 +70,12 @@
             "name": "Львів",
             "country": "Україна",
             "offers": [
-                {"id": 601, "title": "Екскурсія старим Львовом", "price": 3000, "description": "Прогулянка історичним центром Львова.", "discount": "10%", "description": "Знижка при групових бронюваннях."},
-                {"id": 602, "title": "Львівська опера", "price": 3500, "description": "Відвідування Львівського оперного театру."},
-                {"id": 603, "title": "Кавовий Львів", "price": 2500, "description": "Дегустація найкращої львівської кави."},
-                {"id": 604, "title": "Замки Львівщини", "price": 4000, "description": "Відвідування старовинних замків області."},
-                {"id": 605, "title": "Львівський ринок", "price": 2700, "description": "Екскурсія місцевими ринками та сувенірними лавками."},
-                {"id": 606, "title": "Театральна ніч у Львові", "price": 3200, "description": "Вистави та культурні події в місцевих театрах.", "discount": "15%", "description": "Знижка на 2 квитки для пар."}
+                {"id": 601, "title": "Екскурсія старим Львовом", "price": 3000, "description": "Прогулянка історичним центром Львова.", "discount": 10, "description1": "Знижка при групових бронюваннях.", "image": "https://www.kapitoliy.net.ua/wp-content/uploads/2018/06/legendy-starogo-lvova-12-760x532.jpg"},
+                {"id": 602, "title": "Львівська опера", "price": 3500, "description": "Відвідування Львівського оперного театру.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7YsLNWXExO1YCd7xIovFof179Xx-X7KVbLw&s"},
+                {"id": 603, "title": "Кавовий Львів", "price": 2500, "description": "Дегустація найкращої львівської кави.", "image": "https://mtourism.com.ua/images/Ukraine/Lvivshchyna/LVIV/Majsternja_shokolady/lviv-coffee-tour.jpg"},
+                {"id": 604, "title": "Замки Львівщини", "price": 4000, "description": "Відвідування старовинних замків області.", "image": "https://vidviday.ua/blog/wp-content/uploads/2019/03/IMG_24621200.jpg"},
+                {"id": 605, "title": "Львівський ринок", "price": 2700, "description": "Екскурсія місцевими ринками та сувенірними лавками.", "image": "https://prolviv.com/wp-content/uploads/2016/04/1036257_800x600_cikavo-znaty.jpg"},
+                {"id": 606, "title": "Театральна ніч у Львові", "price": 3200, "description": "Вистави та культурні події в місцевих театрах.", "discount": 15, "description1": "Знижка на 2 квитки для пар.", "image": "https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2017/08/niz.jpg?fit=800%2C522&ssl=1"}
             ]
         },
         {
@@ -83,12 +83,12 @@
             "name": "Одеса",
             "country": "Україна",
             "offers": [
-                {"id": 701, "title": "Прогулянка Дерибасівською", "price": 2800, "description": "Огляд головної вулиці Одеси."},
-                {"id": 702, "title": "Катакомби Одеси", "price": 3200, "description": "Екстремальна подорож підземеллями міста."},
-                {"id": 703, "title": "Морська подорож", "price": 3500, "description": "Прогулянка на яхті Чорним морем."},
-                {"id": 704, "title": "Одеситський гумор", "price": 2600, "description": "Тур по місцях, пов'язаних з одеськими анекдотами."},
-                {"id": 705, "title": "Гастрономічна Одеса", "price": 2900, "description": "Дегустація місцевих морепродуктів та страв.", "discount": "20%", "description": "Знижка для груп з 5 осіб і більше."},
-                {"id": 706, "title": "Музей одеського гумору", "price": 2300, "description": "Відвідування музею одеського гумору."}
+                {"id": 701, "title": "Прогулянка Дерибасівською", "price": 2800, "description": "Огляд головної вулиці Одеси.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9vvQlSRpYKAp3CVjI5_yauuwQxCh9K9RdQ&s"},
+                {"id": 702, "title": "Катакомби Одеси", "price": 3200, "description": "Екстремальна подорож підземеллями міста.", "image": "https://sky-post.odesa.ua/wp-content/uploads/2023/11/9494.jpg"},
+                {"id": 703, "title": "Морська подорож", "price": 3500, "description": "Прогулянка на яхті Чорним морем.", "image": "https://excurs.od.ua/wp-content/uploads/2017/01/zaliv-500x250.jpg"},
+                {"id": 704, "title": "Одеситський гумор", "price": 2600, "description": "Тур по місцях, пов'язаних з одеськими анекдотами.", "image": "https://uamedtours.com.ua/storage/images/0b72f48967d33b504c7b742bba050f4d.jpg"},
+                {"id": 705, "title": "Гастрономічна Одеса", "price": 2900, "description": "Дегустація місцевих морепродуктів та страв.", "discount": 20, "description1": "Знижка для груп з 5 осіб і більше.", "image": "https://smachnonews.24tv.ua/resources/photos/news/202107/1685916.jpg?v=1661261391000"},
+                {"id": 706, "title": "Музей одеського гумору", "price": 2300, "description": "Відвідування музею одеського гумору.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWD6o5xLnyQW7W5VhXg7DQ_Wt5BUdPUxGwaw&s"}
             ]
         },
         {
@@ -96,12 +96,12 @@
             "name": "Київ",
             "country": "Україна",
             "offers": [
-                {"id": 801, "title": "Київська Софія", "price": 2500, "description": "Екскурсія по Софіївському собору."},
-                {"id": 802, "title": "Майдан Незалежності", "price": 2200, "description": "Огляд центральної площі столиці."},
-                {"id": 803, "title": "Чорнобильський тур", "price": 4500, "description": "Відвідування зони відчуження."},
-                {"id": 804, "title": "Парк Київська Русь", "price": 2900, "description": "Огляд середньовічної реконструкції Київської Русі."},
-                {"id": 805, "title": "Тур на Дніпрі", "price": 2700, "description": "Прогулянка на катері по Дніпру."},
-                {"id": 806, "title": "Нічний Київ", "price": 2500, "description": "Тур по ночному Києву, огляд найкрасивіших місць."}
+                {"id": 801, "title": "Київська Софія", "price": 2500, "description": "Екскурсія по Софіївському собору.", "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_%28cropped%29.jpg/1200px-80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_%28cropped%29.jpg"},
+                {"id": 802, "title": "Майдан Незалежності", "price": 2200, "description": "Огляд центральної площі столиці.", "image": "https://upload.wikimedia.org/wikipedia/uk/thumb/a/a8/Kiev_Independence_Square_cropped.jpg/1200px-Kiev_Independence_Square_cropped.jpg"},
+                {"id": 803, "title": "Чорнобильський тур", "price": 4500, "description": "Відвідування зони відчуження.", "image": "https://tamtour.com.ua/image/927/006/ca6f5c2e-eb53-4ddb-863f-df1dad90a6de.jpeg"},
+                {"id": 804, "title": "Парк Київська Русь", "price": 2900, "description": "Огляд середньовічної реконструкції Київської Русі.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYssQryDRGJTGZsY079RNCPwm6SXdgSzMutA&s"},
+                {"id": 805, "title": "Тур на Дніпрі", "price": 2700, "description": "Прогулянка на катері по Дніпру.", "image": "https://content.author-tour.com.ua/_Content/avtorskiy-tur-navigator-ukraina-maifainyi-tur-zakarpattia-karpaty-zamki-spa/Images/Camp/thumb_ac550b751c05d513d859ea611f80b816_XL.jpg"},
+                {"id": 806, "title": "Нічний Київ", "price": 2500, "description": "Тур по ночному Києву, огляд найкрасивіших місць.", "image": "https://ci4.googleusercontent.com/proxy/gxqBioX-yuQbp1g5XX4gxiMlgzB7BtDkYHpzB-AM62Qv5J_hv-g_0B-30vmhL8iFbsPKw4aIgNPEzPIlCweNUOJH3YeXpLxJ3Nws-XF30de1IG5ZzEGjgFyegnKtKrfX6_S4WNfIhnF9igdCxCz27XcDpsrD9ZGqxMnC_JVmNBp75Q=s0-d-e1-ft#https://ek.stripocdn.email/content/guids/CABINET_563507f171b37a600d9860c1de9d307f/images/90071631174343055.jpeg"}
             ]
         },
         {
@@ -109,12 +109,12 @@
             "name": "Харків",
             "country": "Україна",
             "offers": [
-                {"id": 901, "title": "Меморіал Слави", "price": 2200, "description": "Огляд меморіалу та парку."},
-                {"id": 902, "title": "Харківська фортеця", "price": 2600, "description": "Екскурсія по старовинним фортецям міста."},
-                {"id": 903, "title": "Парк Горького", "price": 2400, "description": "Прогулянка по популярному парку міста."},
-                {"id": 904, "title": "Харківська опера", "price": 2800, "description": "Вистави в Харківському оперному театрі."},
-                {"id": 905, "title": "Нічний Харків", "price": 2500, "description": "Нічний тур по освітлених вулицях та площах міста."},
-                {"id": 906, "title": "Гастро-тур Харковом", "price": 2700, "description": "Скуштуйте традиційні страви харківської кухні."}
+                {"id": 901, "title": "Меморіал Слави", "price": 2200, "description": "Огляд меморіалу та парку.", "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Fallen_Heroes_Alley_in_Kiev_24.07.08.JPG"},
+                {"id": 902, "title": "Харківська фортеця", "price": 2600, "description": "Екскурсія по старовинним фортецям міста.", "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/I.Repin_Kharkov_ostrog.jpg"},
+                {"id": 903, "title": "Парк Горького", "price": 2400, "description": "Прогулянка по популярному парку міста.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDROBWsVksLPwNYcfoJpoUS0ry6RzcxCEWmQ&s"},
+                {"id": 904, "title": "Харківська опера", "price": 2800, "description": "Вистави в Харківському оперному театрі.", "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%D0%A5%D0%B0%D1%82%D0%BE%D0%B12.jpg"},
+                {"id": 905, "title": "Нічний Харків", "price": 2500, "description": "Нічний тур по освітлених вулицях та площах міста.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBht4vmXGRsTfOLWHS5LKveqkDD42JbUw2g&s"},
+                {"id": 906, "title": "Гастро-тур Харковом", "price": 2700, "description": "Скуштуйте традиційні страви харківської кухні.", "image": "https://navigator-ukraina.com.ua/media/k2/items/cache/e2bf03d29c489ee57637a8f534afa56b_XL.jpg"}
             ]
         },
         {
@@ -122,12 +122,12 @@
             "name": "Тернопіль",
             "country": "Україна",
             "offers": [
-                {"id": 1001, "title": "Острів у Тернополі", "price": 2300, "description": "Прогулянка по острову на Тернопільському ставі."},
-                {"id": 1002, "title": "Тернопільський замок", "price": 2700, "description": "Відвідування замку та історичних пам'яток."},
-                {"id": 1003, "title": "Гастро-тур Тернополем", "price": 2500, "description": "Дегустація місцевих страв."},
-                {"id": 1004, "title": "Тур по парках", "price": 2200, "description": "Прогулянка по найкращих парках міста."},
-                {"id": 1005, "title": "Тернопільська ніч", "price": 2600, "description": "Нічний тур по міських визначних місцях."},
-                {"id": 1006, "title": "Експедиція по ставу", "price": 2800, "description": "Каякінг на Тернопільському ставі."}
+                {"id": 1001, "title": "Острів у Тернополі", "price": 2300, "description": "Прогулянка по острову на Тернопільському ставі.", "image": "https://pro.te.ua/wp-content/uploads/2017/08/ostriv.jpg"},
+                {"id": 1002, "title": "Тернопільський замок", "price": 2700, "description": "Відвідування замку та історичних пам'яток.", "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ternopilzamok.jpg"},
+                {"id": 1003, "title": "Гастро-тур Тернополем", "price": 2500, "description": "Дегустація місцевих страв.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHok1sQdVicAfKGdKH4TI6DEh7__nNgOLa-A&s"},
+                {"id": 1004, "title": "Тур по парках", "price": 2200, "description": "Прогулянка по найкращих парках міста.", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaE2lGG3033Ejyqa7Fu2K4_d5emAlYzj520w&s"},
+                {"id": 1005, "title": "Тернопільська ніч", "price": 2600, "description": "Нічний тур по міських визначних місцях.", "image": "https://teren.in.ua/uploads/media/fd/4d/fd4d8220d74d73fb00f28fb08ec6ff6a_orig.jpg"},
+                {"id": 1006, "title": "Експедиція по ставу", "price": 2800, "description": "Каякінг на Тернопільському ставі.", "image": "https://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/2686463_800x600_5003181469_4803fafbe4_b.jpg"}
             ]
         }
     ]
