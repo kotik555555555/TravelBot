@@ -46,7 +46,7 @@ async def test_handler(message: types.Message):
 
 @router.message(lambda message: message.text == "Бронювання")
 async def test_handler(message: types.Message):
-    await message.answer("""Тут можна забронювати щось наперед. Напишіть те що ви забронювали:""", reply_markup=get_inline_keyboard3())
+    await message.answer("""Тут можна забронювати щось. Напишіть те що ви хочете забронювали:""", reply_markup=get_inline_keyboard3())
 
 
 @router.message(lambda message: message.text == "Акції")
