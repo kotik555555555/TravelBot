@@ -14,7 +14,7 @@ bookings = {}
 
 class BookingState(StatesGroup):
     waiting_for_city = State()     # Очікуємо введення міста
-    waiting_for_offer = State()
+    waiting_for_offer = State()    # Очікуємо введення назви пропозиції
 
 # Callback handler for price sorting buttons
 def find_city(city_name):
@@ -114,6 +114,9 @@ async def handle_city_name(message: types.Message, state: FSMContext):
                     await message.answer_photo(offer['image'], caption=offer_response)
                 else:
                     await message.answer(offer_response)
+        else:
+            await message.answer("⚠ Ви не ввели назву міста. Спробуйте ще раз.")
+            return
 
     except (FileNotFoundError, json.JSONDecodeError, ValueError, Exception) as e:
         await message.answer(f"⚠ Помилка: {str(e)}")

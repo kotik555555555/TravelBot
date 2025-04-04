@@ -14,7 +14,7 @@ def get_book_button(offer_title):
     return InlineKeyboardButton(text="Забронювати", callback_data=f"book_{offer_title}")
 
 
-@router.message(lambda message: message.text.startswith("Готові пропозиції"))
+@router.message(lambda message: message.text.startswith("🎉 Готові пропозиції"))
 async def test_handler(message: types.Message):
     all_offers = [
         (city.get("name"), offer.get("title"), offer.get("price"), offer.get("description"), offer.get("image"))
@@ -39,17 +39,17 @@ async def test_handler(message: types.Message):
         await message.answer("❌ Наразі немає доступних пропозицій.", reply_markup=get_inline_keyboard())
 
 
-@router.message(lambda message: message.text == "Пропозиції по містам")
+@router.message(lambda message: message.text == "🏙️ Пропозиції по містам")
 async def test_handler(message: types.Message):
     await message.answer("""Введіть місто щоб знайти події в ньому:""", reply_markup=get_inline_keyboard2())
 
 
-@router.message(lambda message: message.text == "Бронювання")
+@router.message(lambda message: message.text == "🛏️ Бронювання")
 async def test_handler(message: types.Message):
     await message.answer("""Тут можна забронювати щось. Напишіть те що ви хочете забронювали:""", reply_markup=get_inline_keyboard3())
 
 
-@router.message(lambda message: message.text == "Акції")
+@router.message(lambda message: message.text == "🎈 Акції")
 async def test_handler(message: types.Message):
     # Отримуємо всі пропозиції зі знижкою
     offers_with_discount = [
@@ -76,13 +76,13 @@ async def test_handler(message: types.Message):
         await message.answer("🔸 Наразі немає доступних акцій.", reply_markup=get_inline_keyboard4())
 
 
-@router.message(lambda message: message.text == "Контакти")
+@router.message(lambda message: message.text == "📞 Контакти")
 async def test_handler(message: types.Message):
     await message.answer("""Тут є контакти розробника.Нажми на кнопку щоб дізнатися їх.""",
                          reply_markup=get_inline_keyboard5())
 
 
-@router.message(lambda message: message.text == "Пасхалочка")
+@router.message(lambda message: message.text == "🐣 Пасхалочка")
 async def test_handler(message: types.Message):
     # Use baselib FileManager to manage the image path
     photo = FSInputFile("assets/playboi-carti-gq-december-january-2021-02.jpg")  # Pass the resolved file path to FSInputFile

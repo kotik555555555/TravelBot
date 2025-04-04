@@ -4,9 +4,9 @@ def get_main_keyboard() -> ReplyKeyboardMarkup:
     # Додаємо емодзі в кнопки
     keyboard = ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text="""Готові пропозиції"""), KeyboardButton(text="""Пропозиції по містам""")],
-            [KeyboardButton(text="""Бронювання"""), KeyboardButton(text="""Акції""")],
-            [KeyboardButton(text="""Контакти"""), KeyboardButton(text="""Пасхалочка""")]
+            [KeyboardButton(text="""🎉 Готові пропозиції"""), KeyboardButton(text="""🏙️ Пропозиції по містам""")],
+            [KeyboardButton(text="""🛏️ Бронювання"""), KeyboardButton(text="""🎈 Акції""")],
+            [KeyboardButton(text="""📞 Контакти"""), KeyboardButton(text="""🐣 Пасхалочка""")]
         ],
         resize_keyboard=True
     )
@@ -15,9 +15,9 @@ def get_main_keyboard() -> ReplyKeyboardMarkup:
 async def show_main_menu(message):
     keyboard = ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text="Готові пропозиції"), KeyboardButton(text="Пропозиції по містам")],
-            [KeyboardButton(text="Бронювання"), KeyboardButton(text="Акції")],
-            [KeyboardButton(text="Контакти"), KeyboardButton(text="Пасхалочка")]
+            [KeyboardButton(text="🎉 Готові пропозиції"), KeyboardButton(text="🏙️ Пропозиції по містам")],
+            [KeyboardButton(text="🛏️ Бронювання"), KeyboardButton(text="🎈 Акції")],
+            [KeyboardButton(text="📞 Контакти"), KeyboardButton(text="🐣 Пасхалочка")]
         ],
         resize_keyboard=True
     )
