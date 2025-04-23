@@ -4,7 +4,7 @@ def get_inline_keyboard() -> InlineKeyboardMarkup:
     keyboard = [
         [
             InlineKeyboardButton(text="💲 Ціна(за зростанням) ↑", callback_data="btn_asc"),
-            InlineKeyboardButton(text="💲 Ціна(за спаданням) ↓", callback_data="btn_esc")
+            InlineKeyboardButton(text="💲 Ціна(за спаданням) ↓", callback_data="btn_desc")
         ],
         [
             InlineKeyboardButton(text="🔙 Назад", callback_data="btn_back")
@@ -51,6 +51,19 @@ def get_inline_keyboard5() -> InlineKeyboardMarkup:
     ]
 
     return InlineKeyboardMarkup(inline_keyboard=keyboard5)
+
+def get_inline_keyboard6() -> InlineKeyboardMarkup:
+    keyboard6 = [
+        [
+            InlineKeyboardButton(text="✅ Так", callback_data="btn_yes"),
+            InlineKeyboardButton(text="❌ Ні", callback_data="btn_no")
+        ],
+        [
+            InlineKeyboardButton(text="🔙 Назад", callback_data="btn_6.3")
+        ]
+    ]
+
+    return InlineKeyboardMarkup(inline_keyboard=keyboard6)
 
 def get_inline_keyboard1():
     keyboard = InlineKeyboardMarkup(inline_keyboard=[

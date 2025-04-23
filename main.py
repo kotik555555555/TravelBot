@@ -39,9 +39,10 @@ async def command_start_handler(message: Message) -> None:
 async def main() -> None:
     # Initialize Bot instance with default bot properties which will be passed to all API calls
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
-
+    await bot.delete_webhook(drop_pending_updates=True)
     # And the run events dispatching
     await dp.start_polling(bot)
+    await bot.delete_webhook(drop_pending_updates=True)
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
