@@ -13,7 +13,9 @@ from aiogram.types import Message
 from keyboards.reply_keyboards import get_main_keyboard
 from handlers import register_handlers
 
+from dotenv import load_dotenv
 
+load_dotenv()  # завантажує .env файл
 TOKEN = getenv("BOT_TOKEN")
 dp = Dispatcher()
 register_handlers(dp)
