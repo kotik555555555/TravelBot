@@ -15,20 +15,16 @@ def get_inline_keyboard() -> InlineKeyboardMarkup:
 
 def get_inline_keyboard2() -> InlineKeyboardMarkup:
     keyboard2 = [
-        [
-            InlineKeyboardButton(text="🔍 Пошук за назвою міста", callback_data="btn_2.1"),
-            InlineKeyboardButton(text="🔙 Назад", callback_data="btn_2.2")
-        ]
+        [InlineKeyboardButton(text="🔍 Пошук за назвою міста", callback_data="btn_2.1")],
+        [InlineKeyboardButton(text="🔙 Назад", callback_data="btn_2.2")]
     ]
 
     return InlineKeyboardMarkup(inline_keyboard=keyboard2)
 
 def get_inline_keyboard3() -> InlineKeyboardMarkup:
     keyboard3 = [
-        [
-            InlineKeyboardButton(text="✏️ Опишіть ваше замовлення", callback_data="btn_3.1"),
-            InlineKeyboardButton(text="🔙 Назад", callback_data="btn_3.2")
-        ],
+        [InlineKeyboardButton(text="✏️ Опишіть ваше замовлення", callback_data="btn_3.1")],
+        [InlineKeyboardButton(text="🔙 Назад", callback_data="btn_3.2")]
     ]
 
     return InlineKeyboardMarkup(inline_keyboard=keyboard3)
@@ -44,10 +40,8 @@ def get_inline_keyboard4() -> InlineKeyboardMarkup:
 
 def get_inline_keyboard5() -> InlineKeyboardMarkup:
     keyboard5 = [
-        [
-            InlineKeyboardButton(text="📧 Контакти (повідомлення)", callback_data="btn_5.1"),
-            InlineKeyboardButton(text="🔙 Назад", callback_data="btn_5.2")
-        ],
+        [InlineKeyboardButton(text="📧 Контакти (повідомлення)", callback_data="btn_5.1")],
+        [InlineKeyboardButton(text="🔙 Назад", callback_data="btn_5.2")]
     ]
 
     return InlineKeyboardMarkup(inline_keyboard=keyboard5)
